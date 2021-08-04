@@ -1,0 +1,40 @@
+job_environments:
+  common_environment: &common_environment
+    APP_HOSTPATH: aotearoa
+    CONTAINER_PREFIX: planet4-history-aotearoa
+    WP_DB_NAME_PREFIX: planet4-history-aotearoa_wordpress
+  develop_environment: &develop_environment
+    APP_ENVIRONMENT: development
+    APP_HOSTNAME: history-dev.greenpeace.org
+    CLOUDSQL_INSTANCE: p4-develop-k8s
+    GOOGLE_PROJECT_ID: planet-4-151612
+    GCLOUD_CLUSTER: p4-development
+    HELM_NAMESPACE: develop
+    HELM_RELEASE: planet4-history-aotearoa
+    NEWRELIC_APPNAME: P4 history-aotearoa Development
+    WP_DB_NAME: planet4-history-aotearoa_wordpress_develop
+    WP_STATELESS_BUCKET: planet4-history-aotearoa-stateless-develop
+  release_build_env: &release_build_env
+    GOOGLE_PROJECT_ID: planet4-production
+  release_environment: &release_environment
+    APP_ENVIRONMENT: staging
+    APP_HOSTNAME: history-stage.greenpeace.org
+    CLOUDSQL_INSTANCE: planet4-prod
+    GCLOUD_CLUSTER: planet4-production
+    GOOGLE_PROJECT_ID: planet4-production
+    HELM_NAMESPACE: aotearoa
+    HELM_RELEASE: planet4-history-aotearoa-release
+    NEWRELIC_APPNAME: P4 history-aotearoa Release
+    WP_DB_NAME: planet4-history-aotearoa_wordpress_release
+    WP_STATELESS_BUCKET: planet4-history-aotearoa-stateless-release
+  production_environment: &production_environment
+    APP_HOSTNAME: history.greenpeace.org
+    CLOUDSQL_INSTANCE: planet4-prod
+    GCLOUD_CLUSTER: planet4-production
+    GOOGLE_PROJECT_ID: planet4-production
+    HELM_NAMESPACE: aotearoa
+    HELM_RELEASE: planet4-history-aotearoa-master
+    MIN_REPLICA_COUNT: 2
+    NEWRELIC_APPNAME: P4 history-aotearoa Production
+    WP_DB_NAME: planet4-history-aotearoa_wordpress_master
+    WP_STATELESS_BUCKET: planet4-history-aotearoa-stateless
