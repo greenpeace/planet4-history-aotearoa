@@ -3,6 +3,7 @@
     "description": "Greenpeace P4 history-aotearoa",
     "license": "MIT",
     "require": {
+      "greenpeace/planet4-child-theme-history-aotearoa" : "dev-main"
     },
     "scripts": {
         "site:custom" : []
