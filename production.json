@@ -1,5 +1,6 @@
 {
   "require": {
-      "greenpeace/planet4-child-theme-history-aotearoa" : "v0.1.1"
+    "greenpeace/planet4-child-theme-history-aotearoa" : "v0.1.1",
+    "greenpeace/planet4-master-theme" : "v1.233.0"
   }
 }
