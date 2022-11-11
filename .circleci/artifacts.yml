@@ -9,7 +9,7 @@ job_environments:
     CLOUDSQL_INSTANCE: p4-develop-k8s
     GOOGLE_PROJECT_ID: planet-4-151612
     GCLOUD_CLUSTER: p4-development
-    HELM_NAMESPACE: develop
+    HELM_NAMESPACE: history-aotearoa
     HELM_RELEASE: planet4-history-aotearoa
     WP_DB_NAME: planet4-history-aotearoa_wordpress_develop
     WP_STATELESS_BUCKET: planet4-history-aotearoa-stateless-develop
@@ -21,7 +21,7 @@ job_environments:
     CLOUDSQL_INSTANCE: planet4-prod
     GCLOUD_CLUSTER: planet4-production
     GOOGLE_PROJECT_ID: planet4-production
-    HELM_NAMESPACE: aotearoa
+    HELM_NAMESPACE: history-aotearoa-staging
     HELM_RELEASE: planet4-history-aotearoa-release
     WP_DB_NAME: planet4-history-aotearoa_wordpress_release
     WP_STATELESS_BUCKET: planet4-history-aotearoa-stateless-release
